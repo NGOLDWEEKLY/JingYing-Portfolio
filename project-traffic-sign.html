@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng Jing Ying - Traffic Sign Segmentation Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .project-card {
+            height: 100%;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .btn-outline-primary {
+            border-color: #6a11cb;
+            color: #6a11cb;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #6a11cb;
+            color: white;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ng Jing Ying</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gradient-bg">
+        <h1>Traffic Sign Segmentation Projects</h1>
+    </div>
+
+    <div class="container my-5">
+        <h2 id="projects">Projects</h2>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3 class="card-title">Traffic Sign Segmentation</h3>
+                <p class="card-text">
+                    <strong>Project Contributor:</strong> Ng Jing Ying (Lead), Grace Lai Meng Huey, Oh Jia Sheng, Wai
+                    Jia Le
+                </p>
+                <p class="card-text">
+                    <strong>Supervisor:</strong> Prof. Dr Leung Khar Hang (<a
+                        href="https://www2.utar.edu.my/cv/index.jsp?cv=leungkh&reqPageId=aboutMe">details</a>)
+                </p>
+                <h4 class="card-title">Introduction</h4>
+                <p class="card-text">
+                    Traffic sign segmentation involves isolating traffic sign objects from a traffic scene and
+                    removing background details. A reliable segmentation method should accurately
+                    outline all potential traffic sign contours without omitting any of them. Most traffic
+                    sign segmentation methods are either colour-based or shape-based, given that traffic
+                    signs primarily come in red, yellow, or blue, and their shapes are usually polygons or
+                    circles. Unfortunately, these approaches still exhibit a high failure rate when processing
+                    occluded, blurred, or poorly illuminated signs. Alternatively, adopting deep learning
+                    based image segmentation techniques to enhance contour accuracy appears feasible,
+                    however, it becomes impractical due to the increased complexity it introduces to the
+                    entire traffic sign recognition framework.
+                </p>
+                <p class="card-text">
+                    To address these limitations, we intend to develop a traffic sign segmentation method
+                    which strikes a proper balance between segmentation accuracy and processing time.
+                    We aim to combine traditional colour-based and shape-based traffic sign segmentation
+                    methods which have been widely adopted by previous literature. We are motivated to
+                    undertake this project because many traffic sign recognition frameworks overlooked
+                    the segmentation stage, thus limiting their model’s capabilities. Hence, our proposed
+                    segmentation method will provide insights for future researchers to further maximise
+                    the traffic sign recognition capabilities.
+                </p>
+                <h4 class="card-title">Literature Review</h4>
+                <p class="card-text">
+                    (We only extract parts of our paper in this webpage)
+                </p>
+                <p class="card-text">
+                    R-CNN is a region proposal-based method which used selective search for region proposal generation.
+                </p>
+                <img src="src/media/r-cnn.png" alt="R-CNN" />
+                <p class="card-text">
+                    As shown in Figure, the framework of faster R-CNN architecture was divided
+                    into region proposal, ROI pooling and classification.
+                </p>
+                <img src="src/media/faster-r-cnn.png" alt="Faster R-CNN" />
+                <p class="card-text">
+                    Mask R-CNN would output a binary segmentation mask at the final stage. With a great variety
+                    of approaches that utilised R-CNN to perform instance segmentation, the author
+                    highlighted that bottom-up methods like deep watershed transform and real-time
+                    instance segmentation could be potential alternatives for future research.
+                </p>
+                <img src="src/media/mask-r-cnn.png" alt="Mask R-CNN" />
+
+                <h4 class="card-title">Our Approach</h4>
+                <p class="card-text">
+                    Interestingly, we actually experimented various approaches based on the existing literature.
+                </p>
+                <h5 class="card-title">Attempt 1: Unsupervised Method</h5>
+                <p class="card-text">
+                    Inspired by "Superpixel-Based Fast Fuzzy C-Means Clustering for Color Image Segmentation",
+                    we propose a segmentation method which first generates superpixel using watershed algorithm, then,
+                    we statistically analyze the distribution of pixels according to the shape and colour. Finally,
+                    Fuzzy C-Means algorithm is applied to classify the pixels into background or traffic sign.
+                </p>
+                <img src="src/media/unsupervised-traffic-sign-sys-block-diagram.png" alt="System Block Diagram" />
+
+                <p>
+                    Unfortunately, this approach does not effective at scale. This is because the watershed algorithm is
+                    known of "over-segmenting" an image,
+                    which may eventually complicate the algorithm. The screenshot shows the intermediate result of the
+                    approach (after the superpixel generation steps):
+                </p>
+                <img src="src/media/superpixel-intermediate-result.png" alt="Result" width="600px" />
+
+                <h5 class="card-title">Attempt 2: Traditional Approach</h5>
+                <p class="card-text">
+                    Firstly, the input image is defined as a selected region of interest from a traffic
+                    scene that contains at least one traffic sign. The input image can be of very low
+                    resolution, in low light, occluded, distorted, or blurred. The potential mask generation
+                    stage involves a combination of colour-based and shape-based detection methods,
+                    namely colour thresholding, Canny edge detection, Hough circle detection and
+                    polygonal approximation. At the end of this stage, 3 types of masks, which are circle
+                    detected mask, polygon-detected mask and miscellaneous shape-detected mask are
+                    generated.
+                    In the second stage, termed the “best mask selection”, potential masks are
+                    evaluated and integrated according to pre-defined rules. Ultimately, a segmented traffic
+                    sign image is generated by performing bitwise AND operation between the input image
+                    and the final selected mask.
+                </p>
+                <img src="src/media/traffic-sign-sys-block-diagram.png" alt="System Block Diagram" />
+
+                <h4 class="card-title">Results</h4>
+                <p class="card-text">
+                    The algorithm is tested against 100 test images from various sources
+                    including CTSD. In these 100 test images, there are 42 polygonal traffic sign images
+                    and also 58 circular traffic sign images. As a result, there are 94 True Positives, 5 False
+                    Negatives, 1 False Positives and no
+                    True Negatives.
+                </p>
+                <img src="src/media/true-positive-segment.png" alt="True Positive Segments" />
+                <p class="card-text">
+                    The advantage of traditional approach (which relies on edge detection and color filtering) is the
+                    time efficiency.
+                    We examined that the time taken to complete the algorithm has positive correlation with the size of
+                    the image.
+                </p>
+                <img src="src/media/efficiency-analysis.png" alt="Efficiency Analysis" />
+                <p class="card-text">
+                    Video Demonstration:
+                </p>
+                <div class="ratio ratio-16x9">
+                    <video controls>
+                        <source src="src/media/traffic_sign_demo_outcome.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="card-text mt-3">
+                    <strong>Conclusion:</strong> Our approach achieved a high accuracy in segmenting traffic signs,
+                    showcasing the potential of deep learning in enhancing existing traffic sign recognition systems.
+                    Further
+                    improvements could be made by integrating more diverse datasets and refining the network
+                    architecture.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Ng Jing Ying. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng Jing Ying - UTAR Computer Science Fresh Graduate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .project-card {
+            height: 100%;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .btn-outline-primary {
+            border-color: #6a11cb;
+            color: #6a11cb;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #6a11cb;
+            color: white;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ng Jing Ying</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gradient-bg">
+        <div class="container">
+            <h1 class="display-4">Ng Jing Ying</h1>
+            <p class="lead">Transformer enthusiast | Multimodal LLM Explorer</p>
+        </div>
+    </header>
+    <main class="container my-5">
+        <section id="projects">
+            <h2 class="mb-4">Projects</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Traffic Sign Segmentation</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">OpenCV, C++</h6>
+                            <p class="card-text">Led a team to develop a cost-effective solution for traffic sign
+                                segmentation using traditional image processing techniques.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-traffic-sign.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">PCB Defect Detection</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">YOLO, Python</h6>
+                            <p class="card-text">Improved YOLO algorithm for real-time PCB defect detection in the
+                                semiconductor industry.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-pcb-defect.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">LLM for Science Q&A</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">PyTorch, LoRA</h6>
+                            <p class="card-text">Fine-tuned a small LLM using PEFT methods for science question
+                                answering.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-llm-science.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Resume Screening Application</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">OCR, Small LLM</h6>
+                            <p class="card-text">Integrated OCR and LLM for parsing resume information and qualitative
+                                analysis.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-resume-screening.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="my-5">
+            <h2 class="mb-4">About Me</h2>
+            <p>I am an AI Computer Vision Engineer with a strong background in machine learning and image processing.
+                Currently serving as the technical lead of the AI department at iFast Corporation, I specialize in
+                developing innovative solutions using cutting-edge technologies.</p>
+            <h3 class="h5 mt-4">Skills:</h3>
+            <ul>
+                <li>Computer Vision: OpenCV, YOLO</li>
+                <li>Machine Learning: PyTorch, TensorFlow</li>
+                <li>Programming: Python, C++</li>
+                <li>Tools: Docker, Git, APIs, Message Queues</li>
+            </ul>
+        </section>
+
+        <section id="blog">
+            <h2 class="mb-4">Blog</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">A History of Image DL Models</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">OpenCV, C++</h6>
+                            <p class="card-text">Led a team to develop a cost-effective solution for traffic sign
+                                segmentation using traditional image processing techniques.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-traffic-sign.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">PCB Defect Detection</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">YOLO, Python</h6>
+                            <p class="card-text">Improved YOLO algorithm for real-time PCB defect detection in the
+                                semiconductor industry.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-pcb-defect.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">LLM for Science Q&A</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">PyTorch, LoRA</h6>
+                            <p class="card-text">Fine-tuned a small LLM using PEFT methods for science question
+                                answering.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-llm-science.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Resume Screening Application</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">OCR, Small LLM</h6>
+                            <p class="card-text">Integrated OCR and LLM for parsing resume information and qualitative
+                                analysis.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="project-resume-screening.html" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="my-5">
+            <h2 class="mb-4">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Ng Jing Ying. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
