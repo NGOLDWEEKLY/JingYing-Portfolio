@@ -52,9 +52,6 @@
                         <a class="nav-link" href="index.html#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact</a>
                     </li>
                 </ul>
@@ -76,9 +73,10 @@
                     <div class="card project-card">
                         <div class="card-body">
                             <h5 class="card-title">Traffic Sign Segmentation</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">OpenCV, C++</h6>
-                            <p class="card-text">Led a team to develop a cost-effective solution for traffic sign
-                                segmentation using traditional image processing techniques.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">OpenCV, Gaussian, Canny, C++</h6>
+                            <p class="card-text">Traditional approach matters (94% accuracy)! Led a team to develop a
+                                traffic sign
+                                segmentation program using traditional image processing techniques.</p>
                         </div>
                         <div class="card-footer">
                             <a href="project-traffic-sign.html" class="btn btn-outline-primary">More</a>
@@ -89,12 +87,29 @@
                     <div class="card project-card">
                         <div class="card-body">
                             <h5 class="card-title">PCB Defect Detection</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">YOLO, Python</h6>
-                            <p class="card-text">Improved YOLO algorithm for real-time PCB defect detection in the
-                                semiconductor industry.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">YOLO, Python, Flask, Git, Docker</h6>
+                            <p class="card-text">Trained YOLOv8 for real-time PCB defect detection in the
+                                semiconductor industry. Achieved 98.1% testing accuracy, outperforming approaches in
+                                paper <a href="https://ieeexplore.ieee.org/abstract/document/9978605">PCB Defect
+                                    Detection Method Based on Transformer-YOLO</a>.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="project-pcb-defect.html" class="btn btn-outline-primary">More</a>
+                            <a href="https://github.com/NGOLDWEEKLY/CVFlask" class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">ViT for CIFAR100</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">PyTorch, LoRA</h6>
+                            <p class="card-text">Fine-tuned a ViT model that achieves 92.2% classification accuracy an
+                                average of 0.52s inference time against CIFAR100.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://colab.research.google.com/drive/1o1vVdLgBbjkK9q_LLLhZJ0Dme1oJHTW0"
+                                class="btn btn-outline-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -102,25 +117,66 @@
                     <div class="card project-card">
                         <div class="card-body">
                             <h5 class="card-title">LLM for Science Q&A</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">PyTorch, LoRA</h6>
-                            <p class="card-text">Fine-tuned a small LLM using PEFT methods for science question
-                                answering.</p>
+                            <h6 class="card-subtitle mb-2 text-muted">PyTorch, Transformer, LoRA</h6>
+                            <p class="card-text">Led a team of 4 to fine-tune an instruction-tuned LLM (Mistral v0.2 7B)
+                                using LoRA for science
+                                question
+                                answering. The MCQA model achieves 79.72% of the accuracy, which improves an accuracy by
+                                9% compared to baseline model. Besides,
+                                it beats 175B GPT-3 without CoT and with CoT which achieve 74.04% and 75.17%
+                                respectively. </p>
                         </div>
                         <div class="card-footer">
-                            <a href="project-llm-science.html" class="btn btn-outline-primary">More</a>
+                            <a href="#" class="btn btn-outline-primary">More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card project-card">
                         <div class="card-body">
-                            <h5 class="card-title">Resume Screening Application</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">OCR, Small LLM</h6>
-                            <p class="card-text">Integrated OCR and LLM for parsing resume information and qualitative
-                                analysis.</p>
+                            <h5 class="card-title">Candidate Screening Application</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Document Analysis, LLM, Application
+                                Development, Bootstrap
+                            </h6>
+                            <p class="card-text">
+                                Led a team of four to identify the pain points in the existing hiring methodology for
+                                SMEs, which often rely
+                                too heavily on quantitative metrics such as CGPA. Developed a proof-of-concept that
+                                combines qualitative and quantitative analysis of both resumes and randomized open-ended
+                                timed assessments. Github Repo:
+                                https://github.com/Null-Pointer-Ninjas/google-dev-hack-2023</p>
                         </div>
                         <div class="card-footer">
-                            <a href="project-resume-screening.html" class="btn btn-outline-primary">More</a>
+                            <a href="https://github.com/Null-Pointer-Ninjas/google-dev-hack-2023"
+                                class="btn btn-outline-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Immersive Soft Skills Application</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Multi-agent, LLM, Application
+                                Development, Unity C#, Python FastAPI, threading
+                            </h6>
+                            <p class="card-text">
+                                Collaborate with UTAR DSSC lecturers to design and implement a soft skills training
+                                application to simulate real-life scenario.
+                                Enable students/employees to practice and receive comprehensive feedback
+                                cost-effectively. Besides, a user-friendly scenario creation webpage is designed to
+                                allow soft skills trainers who have no background in AI/IT to configure the scenario
+                                easily.
+                                <br><br>
+                                Demo:
+                                Interview Session: <a
+                                    href="https://www.youtube.com/watch?v=2WwAfddIRac">https://www.youtube.com/watch?v=2WwAfddIRac</a>
+                                <br><br>
+                                AI爱上学 (Mandarin): <a
+                                    href="https://youtu.be/jKtYOOmkarc">https://youtu.be/jKtYOOmkarc</a>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-primary">More</a>
                         </div>
                     </div>
                 </div>
@@ -131,92 +187,26 @@
             <h2 class="mb-4">About Me</h2>
             <p>Hi, I'm Ng Jing Ying, a Transformer Enthusiast and Multimodal LLM Explorer! 👀 I'm interested in
                 responsible AI and cybersecurity. 🌱 I recently graduated from Universiti Tunku Abdul Rahman (UTAR),
-                Malaysia with a Bachelor of Computer Science (Hons), achieving a CGPA of 3.95/4.00.</p>
+                Malaysia with a Bachelor of Computer Science (Hons), achieving a CGPA of 3.95/4.00. 😎 Guess what? I
+                have been a consistent problem solver since I was in secondary school! (Check-out my secondary school
+                self-learn coding work at Github)</p>
             <h3 class="h5 mt-4">Skills:</h3>
             <ul>
-                <li>Computer Vision: OpenCV, YOLO</li>
+                <li>Computer Vision: OpenCV, YOLO, CNN, Tranformer, Quantisation, PEFT</li>
                 <li>Machine Learning: PyTorch, TensorFlow, scikit-learn</li>
                 <li>Programming: Python, C++, Java, JavaScript, SpringBoot, Flask</li>
                 <li>Tools: Docker, Git, APIs, Message Queues</li>
             </ul>
         </section>
 
-        <section id="blog">
-            <h2 class="mb-4">Blog</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">A History of Image DL Models</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">OpenCV, C++</h6>
-                            <p class="card-text">Led a team to develop a cost-effective solution for traffic sign
-                                segmentation using traditional image processing techniques.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="project-traffic-sign.html" class="btn btn-outline-primary">More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Image Segmentation using U-Net</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">YOLO, Python</h6>
-                            <p class="card-text">Improved YOLO algorithm for real-time PCB defect detection in the
-                                semiconductor industry.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="project-pcb-defect.html" class="btn btn-outline-primary">More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">LLM for Science Q&A</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">PyTorch, LoRA</h6>
-                            <p class="card-text">Fine-tuned a small LLM using PEFT methods for science question
-                                answering.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="project-llm-science.html" class="btn btn-outline-primary">More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Resume Screening Application</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">OCR, Small LLM</h6>
-                            <p class="card-text">Integrated OCR and LLM for parsing resume information and qualitative
-                                analysis.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="project-resume-screening.html" class="btn btn-outline-primary">More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <section id="contact" class="my-5">
             <h2 class="mb-4">Contact</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+            <ul>
+                <li>Linkedin: <a href="https://linkedin.com/in/PurzNg">https://linkedin.com/in/PurzNg</a></li>
+                <li>Github: <a href="https://github.com/NGOLDWEEKLY">https://github.com/NGOLDWEEKLY</a></li>
+                <li>Email: <a href="mailto:jypurz@gmail.com">jypurz@gmail.com</a></li>
+
+            </ul>
         </section>
     </main>
 
