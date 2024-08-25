@@ -174,7 +174,6 @@
 
             if (lastVisit !== today) {
                 localStorage.setItem('lastVisit', today);
-                localStorage.removeItem('records');
                 document.querySelectorAll('.grid-button').forEach(button => {
                     button.classList.remove('btn-success');
                     button.classList.add('btn-warning');
